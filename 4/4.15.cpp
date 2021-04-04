@@ -9,17 +9,17 @@ using namespace std;
 
 int main()
 {
-    double sales;
-    double total;
-    
+  double sales;
+  double total;
+
+  cin >> sales;
+
+  while(sales != -1)
+  {
+    total = SALEMAN_PAY + sales * COMMISSION;
+    cout << "Sales is :"<< "$" << fixed << setprecision(2) <<  total << endl;
     cin >> sales;
-    
-    while(sales != -1)
-    {
-        total = SALEMAN_PAY + sales * COMMISSION;
-        cout << "Sales is :"<< "$" << fixed << setprecision(2) <<  total << endl;
-        cin >> sales;        
-    }
-    return  0;    
+  }
+  return  0;
 
 }
